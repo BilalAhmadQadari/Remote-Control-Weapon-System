@@ -1,0 +1,148 @@
+@font-face {
+  font-family: bahijzar;
+  src: url(./Bahij\ Lotus-Bold.ttf);
+}
+body {
+  font-family: bahijzar;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+.back-btn{
+  align-items:center;
+  
+}
+.back-btn:hover {
+  color: #ff6f61;
+}
+
+/* Product Details */
+.product-details {
+  padding: 40px 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-image {
+  flex: 1 1 300px;
+  max-width: 500px;
+  margin: 20px;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+}
+
+.product-info {
+  flex: 1 1 300px;
+  max-width: 500px;
+  margin: 20px;
+}
+
+.product-info h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.product-info .description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Back Button (Close Button) */
+.back-btn {
+  display: inline-block;
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 20px;
+  border-radius: 5px;
+  margin-left: 500px;
+  
+}
+
+.back-btn:hover {
+  background-color: #e14c39;
+}
+
+.back-btn:active {
+  background-color: #c8392a;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer ul li a:hover {
+  color: #ff6f61;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-image,
+  .product-info {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .product-info h1 {
+    font-size: 20px;
+  }
+
+  .product-info .description {
+    font-size: 14px;
+  }
+
+  .product-info p {
+    font-size: 16px;
+  }
+
+  .back-btn {
+    font-size: 16px;
+  }
+}
